@@ -1,29 +1,4 @@
-## ct8--serv00自动化批量保号，每3天自动登录一次面板，并且发送消息到Telegram
-
-利用github Action以及python脚本实现
-
-🙏🙏🙏点个Star！！Star！！Star！！
-
-交流群：https://t.me/yxjsjl
-
-### 将代码fork到你的仓库并运行的操作步骤
-
-#### 1. Fork 仓库
-
-1. **访问原始仓库页面**：
-    - 打开你想要 fork 的 GitHub 仓库页面。
-
-2. **Fork 仓库**：
-    - 点击页面右上角的 "Fork" 按钮，将仓库 fork 到你的 GitHub 账户下。
-
-#### 2. 设置 GitHub Secrets
-
-1. **创建 Telegram Bot**
-    - 在 Telegram 中找到 `@BotFather`，创建一个新 Bot，并获取 API Token。
-    - 获取到你的 Chat ID 方法一，在[一休技术交流群](https://t.me/yxjsjl)里发送`/id@KinhRoBot`获取，返回用户信息中的`ID`就是Chat ID
-    - 获取到你的 Chat ID 方法二，可以通过向 Bot 发送一条消息，然后访问 `https://api.telegram.org/bot<your_bot_token>/getUpdates` 找到 Chat ID。
-
-2. **配置 GitHub Secrets**
+. **配置 GitHub Secrets**
     - 转到你 fork 的仓库页面。
     - 点击 `Settings`，然后在左侧菜单中选择 `Secrets`。
     - 添加以下 Secrets：
@@ -72,9 +47,3 @@
       ```
     - 获取方法: 创建一个包含serv00账号信息的 JSON 文件，并将其内容添加到 GitHub 仓库的 Secrets 中。
 
-### 注意事项
-
-- **保密性**: Secrets 是敏感信息，请确保不要将它们泄露到公共代码库或未授权的人员。
-- **更新和删除**: 如果需要更新或删除 Secrets，可以通过仓库的 Secrets 页面进行管理。
-
-通过以上步骤，你就可以成功将代码 fork 到你的仓库下并运行它了。如果需要进一步的帮助或有其他问题，请随时告知！
